@@ -1,32 +1,11 @@
-:root {
-  --primary-text-color: #212121;
-  --second-text-color: #2196F3;
-  --white-color-text: #FFFFFF;
-  --background-second-color: #2F303A;
-  --background-first-color:  #E5E5E5;
-  --background-therd-color: #F5F4FA;
-  --card-set-gap: -30px;
- } 
+
 /* -------------------------утилиты ----------------------------*/
 
- body {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  color: #2a2a2a;
-} 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; 
-}
-p, h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* -----------------------hide content-------------------------- */
-.hide { display: none; }
 
-/*-----------------------flash menu----------------------------- */
+
+/* -----------------------hide content-------------------------- */
+
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -42,15 +21,7 @@ p, h1, h2, h3, h4, h5, h6 {
   
 /* -----------------------button-------------------------------- */
 
- .container { 
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 
- margin: 0 auto;
- /* outline: 1px solid tomato */
-
-}
 
 /* ------------logo------------ */ 
 .line {
@@ -76,15 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .studio {
   color: var(--primary-text-color);
 }
-@keyframes shake {
-  0% {
-    transform: translate(10px)
-  }
-  100% {
-    transform: translate(-10px)
-  }
-  
-}
+
  .link {
    display: block;
 
@@ -221,43 +184,6 @@ color: var(--white-color-text);
 
 /* -------------button-hero---------------------*/
 
-.hero-button{
-display: flex;
-align-items: center;
-text-align: center;
-
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 32px;
-padding-right: 32px;
-  
-margin: 0 auto;
-    
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 38px;
-  letter-spacing: 0.06em;
-  background: #2196F3;
-  color: var(--white-color-text);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
- border: none;
- height: 50px;
-
- transition-property: background-color;
- transition-duration: 250ms;
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
-
-}
-  
-  
-  .hero-button:focus,
-  
-  .hero-button:hover {
-    color: var(--white-color-text);
-    background: #188CE8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 
   .button-button:focus,
   .button-portfoli:hover{
@@ -1055,6 +981,4 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--white-color-text);
     background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-
-
+}
