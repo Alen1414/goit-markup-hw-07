@@ -1,0 +1,44 @@
+.client{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    
+    
+    .icon-pikchy{
+      padding: 16px 32px 16px 32px;
+      display: flex;
+      align-items: flex-start;
+      
+    margin: auto;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    fill: #AFB1B8;
+    margin: auto;
+    
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+    
+    .icon-client{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+    }
+    
+    .icon-size:not(:last-child){
+      margin-right: 30px;
+    }
+    .icon-pikchy:hover{
+     fill:  #2196F3;
+     border-color: #2196F3;
+     }
+     

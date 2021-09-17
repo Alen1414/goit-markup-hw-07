@@ -1,0 +1,96 @@
+.maim-section{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 94px; */
+    }
+  
+  .title-photo{
+    padding-bottom: 50px;
+    text-align: center;
+   
+  }
+  
+  .items-company{
+  
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  
+  margin-left: -30px;
+  margin-top: -30px;
+  }
+  .box-items {
+  flex-basis: calc(100%/4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  }
+  
+  .company-list{
+    padding-bottom: 10px;
+  
+  }
+  .items-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+  text-transform: none;
+  margin-bottom: 94px;
+  }
+  .maim-section{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  }
+  
+  
+  .photo-list{
+   
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding-bottom: 94px;
+   }
+  
+   .photo-box{
+    position: relative;
+    display: block;
+   
+    width: 370px;
+    max-height: 294px;
+    flex-basis: ((100% - 3*30)/3);
+    margin-left: 30px;
+    margin-top: 30px;
+  
+    
+   }
+   .text-one{
+    
+    position: absolute;
+    bottom: 0;
+    
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:370px;
+    height:70px;
+    
+  
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    line-height: 1.14;
+   
+   color: #FFFFFF;
+   background-color: #2F303ACC; 
+  
+   } 
+  
