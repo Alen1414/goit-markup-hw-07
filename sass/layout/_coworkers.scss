@@ -55,11 +55,12 @@
   }
   .social-item:not(:last-child){
       margin-right: 10px;
+      &{
+        display: flex;
+        justify-content: center;
+      }
     }
-  .social-item{
-    display: flex;
-    justify-content: center;
-  }
+  
   .icon-social{
     fill: currentColor;;
   }

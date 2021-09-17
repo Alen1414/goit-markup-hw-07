@@ -14,8 +14,9 @@
     
     background: #F5F4FA;
     border-radius: 4px;
-    }
-    
-    .icon-items:not(:last-child){
+   &:not(:last-child){
       margin-right: 30px;
     }
+    }
+    
+    

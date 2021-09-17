@@ -132,6 +132,15 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -140,7 +149,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .item-nav {
   display: block;
-  /* display: flex; */
   position: relative;
 }
 
@@ -154,10 +162,6 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-:hover::after {
-  opacity: 1;
 }
 
 .item-nav:focus:after {
@@ -197,20 +201,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .icon-phone:hover {
   fill: #2196F3;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-}
-
-.site-nav .link.current {
-  color: #2196f3;
 }
 
 .line {
@@ -288,7 +278,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .maim-section {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 94px; */
 }
 
 .title-photo {
@@ -426,7 +415,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
 }
 
-.social-item {
+.social-item:not(:last-child) {
   display: flex;
   justify-content: center;
 }
@@ -461,6 +450,11 @@ p, h1, h2, h3, h4, h5, h6 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-pikchy:hover {
+  fill: #2196F3;
+  border-color: #2196F3;
+}
+
 .icon-client {
   display: flex;
   justify-content: center;
@@ -469,11 +463,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .icon-size:not(:last-child) {
   margin-right: 30px;
-}
-
-.icon-pikchy:hover {
-  fill: #2196F3;
-  border-color: #2196F3;
 }
 
 .jeneral-box {
@@ -587,8 +576,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .icon-fly {
   position: relative;
-  /* left: 13px;
-     bottom: 0; */
 }
 
 .fallow-text {
@@ -642,8 +629,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-fallow:focus,
-.btn-fallow:hover {
+.btn-fallow:focus, .btn-fallow:hover {
   color: var(--white-color-text);
   background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -698,6 +684,12 @@ p, h1, h2, h3, h4, h5, h6 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-portfoli:focus, .button-portfoli:hover {
+  color: var(--white-color-text);
+  background-color: var(--second-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .button-all {
   width: 73px;
 }
@@ -716,13 +708,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .button-market {
   width: 130px;
-}
-
-.button-button:focus,
-.button-portfoli:hover {
-  color: var(--white-color-text);
-  background-color: var(--second-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-set {
@@ -804,6 +789,13 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opaciti 300ms, visabiliti 300ms;
+}
+
 .modal-text {
   display: block;
   font-style: normal;
@@ -848,13 +840,6 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 8px;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opaciti 300ms, visabiliti 300ms;
-}
-
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
@@ -894,7 +879,6 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 50%;
   transform: translateY(-50%);
   color: #212121;
-  /* transition: fill  cubic-bezier(0.4, 0, 0.2, 1) ; */
 }
 
 .input-wrap {
@@ -951,16 +935,16 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-chek:focus {
+  border: 2px solid #141313;
+}
+
 .checkbox:checked + .check-label > .icon-chek {
   background: #2196F3;
   border: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.icon-chek:focus {
-  border: 2px solid #141313;
 }
 
 .visually-hidden {
@@ -993,8 +977,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-form:focus,
-.btn-form:hover {
+.btn-form:focus, .btn-form:hover {
   color: var(--white-color-text);
   background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

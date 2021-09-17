@@ -26,6 +26,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    &:hover{
+      fill:  #2196F3;
+      border-color: #2196F3;
+      }
+      
     }
     
     .icon-client{
@@ -37,8 +42,4 @@
     .icon-size:not(:last-child){
       margin-right: 30px;
     }
-    .icon-pikchy:hover{
-     fill:  #2196F3;
-     border-color: #2196F3;
-     }
-     
+  
