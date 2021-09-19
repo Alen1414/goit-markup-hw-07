@@ -53,7 +53,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.logo {
+.main-nav__logo {
   margin-right: 93px;
   color: #2196F3;
   font-family: "Rolway", sans-serif;
@@ -64,7 +64,7 @@ p, h1, h2, h3, h4, h5, h6 {
   animation: shake 100ms linear  1;
 }
 
-.studio {
+.main-nav__studio {
   color: var(--primary-text-color);
 }
 
@@ -123,12 +123,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .site-nav {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -137,7 +137,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #2196f3;
 }
 
-.site-nav .link.current {
+.site-nav.link.current {
   color: #2196f3;
 }
 
@@ -147,12 +147,12 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
-.item-nav {
+.site-nav__item-nav {
   display: block;
   position: relative;
 }
 
-.item-nav::after {
+.site-nav__item-nav::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -164,19 +164,19 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-nav:focus:after {
+.site-nav__item-nav:focus:after {
   opacity: 1;
 }
 
-.site-nav .item-nav {
+.site-nav__item-nav {
   margin-left: 50px;
 }
 
-.site-nav .item-nav:first-child {
+.site-nav__item-nav:first-child {
   margin-left: 0px;
 }
 
-.item-site {
+.site-nav__item-nav {
   display: flex;
 }
 
@@ -205,9 +205,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .line {
   border-bottom: 1px solid #ECECEC;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
