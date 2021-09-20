@@ -1,4 +1,4 @@
-.fone{
+.main-fon{
     background: #F5F4FA;
    }
   .stuf-block {
@@ -14,7 +14,7 @@
     margin-bottom: 94px;
     }
    
-   .photo-stuf {
+   .stuf-block__photo {
         flex-basis: ((100% - 4*30)/4);
         margin-left: 30px;
         margin-top: 30px;
@@ -23,7 +23,7 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
     
-    .title-stuf{
+    .title{
     text-align: center;
     padding: auto;
    
@@ -31,37 +31,25 @@
     padding-bottom: 50px ;
     
     }
-  .stuf-socials{
+  .stuf-block__socials{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
   }
-  .stuf-name {
+  .stuf-block__name{
+    @include font( 500,0.03em) 
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
-  
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    ine-height: 1.18;
   }
-  .stuf-position {
+  
+  .stuf-block__position {
   text-align: center;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;
-  }
-  .social-item:not(:last-child){
-      margin-right: 10px;
-      &{
-        display: flex;
-        justify-content: center;
-      }
-    }
-  
-  .icon-social{
-    fill: currentColor;;
   }
   

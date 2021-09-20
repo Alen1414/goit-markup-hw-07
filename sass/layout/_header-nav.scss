@@ -49,35 +49,40 @@
      
    .site-nav__item-nav {
       margin-left: 50px;
-     &:first-child {
-      margin-left: 0px; 
-      } 
-     &{ display: flex;
-   }
-    }
-     
+      &:first-child {
+        margin-left: 0px; 
+        } 
+       &{ display: flex;
+        }
+         }
+      
+         .site-nav__email{
+          margin-right: 10px;
+          fill: currentColor;
+        }
+        .site-nav__phone{
+
+          fill:  currentColor;
+          margin-left: 30px;
+          margin-right: 10px;
+          &:hover{
+              fill:  #2196F3;
+              }
+        }
+       
+         .site-nav__item-site {
+          display: flex;
+     }
+       
   
    
-        .item-color{
+        .site-nav__item-text{
        color: #757575;
         }
         .active {
           color:  #2196F3;
           }
-          .icon-email{
-            margin-right: 10px;
-            fill: currentColor;
-          }
-          .icon-phone{
-  
-            fill:  currentColor;
-            margin-left: 30px;
-            margin-right: 10px;
-            &:hover{
-                fill:  #2196F3;
-                }
-          }
-         
+          
           
 .line {
 border-bottom: 1px solid #ECECEC;

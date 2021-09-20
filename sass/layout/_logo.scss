@@ -10,8 +10,10 @@
        animation: shake 100ms linear  1;
      }
     
-    .main-nav__studio {
+    .main-nav__logo-dark {
       color: var(--primary-text-color);
     }
     
-    
+    .main-nav__logo-light{
+      color: var(--white-color-text);
+    }
